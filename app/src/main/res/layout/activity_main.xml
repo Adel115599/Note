@@ -18,24 +18,27 @@
         app:layout_constraintBottom_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_marginBaseline="16dp"
-        tools:layout_editor_absoluteX="0dp">
+        tools:layout_editor_absoluteX="0dp"/>
 
-    </SearchView>
+
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="409dp"
-        android:layout_height="604dp"
+        android:id="@+id/recycler_view"
+        android:layout_width="342dp"
+        android:layout_height="560dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/searchview"
-        tools:listitem="@layout/list_item"/>
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/list_item" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_width="77dp"
-        android:layout_height="58dp"
-        android:layout_weight="1"
+        android:id="@+id/fb_add_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="26dp"
         android:clickable="true"
         android:src="@android:drawable/ic_input_add"
         app:layout_constraintBottom_toBottomOf="parent"
