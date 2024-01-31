@@ -12,26 +12,8 @@
     <item name="windowActionModeOverlay">true</item>
     <item name="actionModeBackground">@color/colorPrimaryDark</item>
     <item name="actionBarPopupTheme">@style/ThemeOverlay.MaterialComponents.Light</item>
-    <item name="sublimePickerStyle">@style/ONSublimePickerStyle</item>
   </style>
 
-  <style name="ONSublimePickerStyle" parent="SublimePickerStyleLight">
-    <item name="colorAccent">@color/colorPrimary</item>
-  </style>
-
-  <style name="OmniNotesTheme.ApiSpec" />
-
-  <style name="OmniNotesTheme.ApiSpec.Branded">
-    <item name="android:windowBackground">@drawable/branded_background</item>
-  </style>
-
-  <style name="OmniNotesFullscreenTheme" parent="@style/Theme.MaterialComponents">
-    <item name="actionBarStyle">@style/FullscreenActionBarStyle</item>
-    <item name="windowActionBarOverlay">true</item>
-    <item name="background">@color/black_overlay</item>
-  </style>
-
-  <style name="OmniNotesFullscreenTheme.ApiSpec" />
 
   <style name="OmniNotesTheme.NoDisplay">
     <item name="android:windowBackground">@null</item>
@@ -42,9 +24,8 @@
     <item name="android:windowNoDisplay">true</item>
   </style>
 
-  <style name="OmniNotesTheme.ApiSpec.Dialog">
+  <style name="OmniNotesTheme.Dialog">
     <item name="android:windowIsTranslucent">true</item>
-    <item name="android:windowBackground">@drawable/bg_card</item>
     <item name="android:windowContentOverlay">@null</item>
     <item name="android:windowFrame">@null</item>
     <item name="android:windowNoTitle">true</item>
@@ -52,14 +33,6 @@
     <item name="android:backgroundDimEnabled">true</item>
   </style>
 
-  <style name="Theme.MaterialComponents.Dialog.NoBackgroundOrDim" parent="AppTheme">
-    <item name="android:windowIsTranslucent">true</item>
-    <item name="android:windowBackground">@android:color/transparent</item>
-    <item name="android:windowContentOverlay">@null</item>
-    <item name="android:windowFrame">@null</item>
-    <item name="android:windowNoTitle">true</item>
-    <item name="android:windowIsFloating">true</item>
-  </style>
 
   <style name="AppTheme.ActionBar.Fullscreen.TitleTextStyle" parent="@android:style/TextAppearance">
     <item name="android:textColor">@android:color/white</item>
@@ -153,8 +126,9 @@
   </style>
 
   <style name="fab_labels_style">
-    <item name="android:background">@drawable/fab_labels_background</item>
+    <item name="android:background">@drawable/baseline_add_circle_24</item>
     <item name="android:textColor">@color/text_color</item>
   </style>
 
+  <string name="undo">undo\n</string>
 </resources>

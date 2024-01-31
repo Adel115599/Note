@@ -7,30 +7,17 @@
     android:layout_height="match_parent"
     tools:context="MainActivity">
 
-    <SearchView
-        android:id="@+id/searchview"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:layout_marginTop="4dp"
-        android:elevation="8dp"
-        android:iconifiedByDefault="false"
-        android:queryHint="search notes"
-        app:layout_constraintBottom_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_marginBaseline="16dp"
-        tools:layout_editor_absoluteX="0dp"/>
 
 
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
-        android:layout_width="342dp"
-        android:layout_height="560dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/searchview"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toTopOf="parent"
         tools:listitem="@layout/list_item" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
