@@ -17,11 +17,11 @@ class NoteViewModel(application: Context): ViewModel() {
 
     init {
 
-        val dao = NoteDatabase.getdatabase(application)
+        val dao = NoteDatabase.getInstance(application).noteDao()
 
         repository = NotesRepository(dao)
 
-        allnotes = repository.allNotes
+        allnotes = repository.getAllNote()
     }
 
     suspend fun deleteNote(note: Note) = repository.delete(note)

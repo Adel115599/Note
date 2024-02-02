@@ -30,10 +30,12 @@ android {
     buildFeatures{
         viewBinding=true;
     }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
+
+        compileOptions {
+            sourceCompatibility =JavaVersion.VERSION_1_8
+                    targetCompatibility =JavaVersion.VERSION_1_8
+        }
+
     kotlinOptions {
         jvmTarget = "1.8"
     }
@@ -52,10 +54,11 @@ dependencies {
 
 
     implementation ("androidx.room:room-ktx:2.6.1")
-    implementation ("androidx.room:room-runtime:2.4.2")
-    kapt ("androidx.room:room-compiler:2.4.2")
+    implementation ("androidx.room:room-runtime:2.6.1")
+    //noinspection KaptUsageInsteadOfKsp
+    kapt ("androidx.room:room-compiler:2.6.1")
 
-    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1")
-    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.4.1")
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 }

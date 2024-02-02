@@ -1,12 +1,12 @@
 package com.example.notesyttutorial.Database
 
-import androidx.lifecycle.liveData
-import com.example.notesyttutorial.Models.Note
+import androidx.lifecycle.LiveData
+import com.example.note.database.NoteDao
+import com.example.note.models.Note
 
 class NotesRepository(private val noteDao: NoteDao) {
 
-    val allNotes: LiveData<List<Note>> noteDao.getAllNotes()
-
+    fun getAllNote() = noteDao.getAllNotes()
     suspend fun insert(note: Note) {
         noteDao.insert(note)
 
@@ -20,4 +20,5 @@ class NotesRepository(private val noteDao: NoteDao) {
 
     suspend fun update(note: Note){
 
-        noteDao.update(note.id, note.title, note.note)
+        noteDao.update(note.id, note.title, note.note)}
+}
